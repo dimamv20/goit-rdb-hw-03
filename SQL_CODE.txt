@@ -1,0 +1,17 @@
+1.1.
+SELECT * FROM database_dz3.products;
+1.2.
+SELECT name , phone FROM datebase_dz3.shippers;
+2.
+Select
+	 min(price) as min_price, 
+	avg(price) as avarange_price,
+	max(price) as max_price 
+from datebase_dz3.products;
+
+3.
+SELECT DISTINCT category_id, price FROM database_dz3.products ORDER BY price DESC LIMIT 10;
+4.
+SELECT COUNT(*) AS product_count FROM datebase_dz3.products WHERE price BETWEEN 20 AND 100;
+5.
+SELECT supplier_id, COUNT(*) AS product_count, AVG(price) AS avarange_price FROM database_dz3.products GROUP BY supplier_id;
